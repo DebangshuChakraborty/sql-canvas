@@ -1,0 +1,236 @@
+
+> sql-canvas@1.0.0 build
+> npm run build:vite && electron-builder
+
+
+> sql-canvas@1.0.0 build:vite
+> vite build
+
+[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32m✓[39m 1758 modules transformed.
+rendering chunks...
+computing gzip size...
+[2m../dist/[22m[32mindex.html                 [39m[1m[2m  0.40 kB[22m[1m[22m[2m │ gzip:  0.27 kB[22m
+[2m../dist/[22m[35massets/index-BznFNoPA.css  [39m[1m[2m  0.65 kB[22m[1m[22m[2m │ gzip:  0.34 kB[22m
+[2m../dist/[22m[36massets/index-Wko5zO3z.js   [39m[1m[2m224.87 kB[22m[1m[22m[2m │ gzip: 70.25 kB[22m
+[32m✓ built in 1.83s[39m
+  • electron-builder  version=26.8.1 os=10.0.26200
+  • loaded configuration  file=package.json ("build" field)
+  • effective config  config=directories:
+  output: dist-electron
+  buildResources: build
+appId: com.sqlcanvas.app
+productName: SQL Canvas
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+      - backend/**/*
+win:
+  target: nsis
+
+  • description is missed in the package.json  appPackageFile=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\package.json
+  • no event listeners found  event=beforePack
+  • spawning        command=npm prefix -w cwd=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas
+  • exited          command=npm code=1 pid=34396
+  • executing @electron/rebuild  electronVersion=40.8.0 arch=x64 buildFromSource=false workspaceRoot=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas projectDir=./ appDir=./
+  • installing native dependencies  arch=x64
+  • completed installing native dependencies
+  • packaging       platform=win32 arch=x64 electron=40.8.0 appOutDir=dist-electron\win-unpacked
+  • no custom electronDist provided, unpacking default Electron distribution
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe unpack-electron --configuration [{"platform":"win32","arch":"x64","version":"40.8.0"}] --output C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\dist-electron\win-unpacked --distMacOsAppName Electron.app
+  • map async       taskCount=2
+  • map async       taskCount=1
+  • map async       taskCount=75
+  • exited          command=app-builder.exe code=0 pid=25668
+  • no event listeners found  event=afterExtract
+  • searching for node modules  pm=npm searchDir=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas
+(node:18112) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+  • node modules collection complete  packageName=sql-canvas depCount=8
+  • collected node modules  pm=npm nodeModules=[{"name":"@monaco-editor/loader","version":"1.7.0","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\@monaco-editor\\loader"},{"name":"@monaco-editor/react","version":"4.7.0","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\@monaco-editor\\react"},{"name":"lucide-react","version":"0.577.0","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\lucide-react"},{"name":"oracledb","version":"6.10.0","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\oracledb"},{"name":"react","version":"19.2.4","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\react"},{"name":"react-dom","version":"19.2.4","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\react-dom"},{"name":"scheduler","version":"0.27.0","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\scheduler"},{"name":"state-local","version":"1.0.7","dir":"C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\node_modules\\state-local"}]
+  • duplicate dependency references  dependencies=["react-dom@19.2.4"]
+  • identified module  dep=@monaco-editor/loader from=node_modules\@monaco-editor\loader to=dist-electron\win-unpacked\resources\app\node_modules\@monaco-editor\loader filesCount=31
+  • identified module  dep=@monaco-editor/react from=node_modules\@monaco-editor\react to=dist-electron\win-unpacked\resources\app\node_modules\@monaco-editor\react filesCount=14
+  • identified module  dep=lucide-react from=node_modules\lucide-react to=dist-electron\win-unpacked\resources\app\node_modules\lucide-react filesCount=3934
+  • identified module  dep=oracledb from=node_modules\oracledb to=dist-electron\win-unpacked\resources\app\node_modules\oracledb filesCount=122
+  • identified module  dep=react from=node_modules\react to=dist-electron\win-unpacked\resources\app\node_modules\react filesCount=26
+  • identified module  dep=react-dom from=node_modules\react-dom to=dist-electron\win-unpacked\resources\app\node_modules\react-dom filesCount=42
+  • identified module  dep=scheduler from=node_modules\scheduler to=dist-electron\win-unpacked\resources\app\node_modules\scheduler filesCount=14
+  • identified module  dep=state-local from=node_modules\state-local to=dist-electron\win-unpacked\resources\app\node_modules\state-local filesCount=7
+  • not packed into asar archive  file=node_modules\oracledb\build\Release\oracledb-6.10.0-darwin-arm64.node reason=contains executable code
+  • updating asar integrity executable resource  executablePath=dist-electron\win-unpacked\SQL Canvas.exe
+  • getPublishConfigsForUpdateInfo: no publishConfigs, detect using repository info
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe icon --format ico --root C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\build --root C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas --out C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\dist-electron\.icon-ico
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\build\icon.ico
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\icon.ico
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\build\icons
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\icons
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\build\icon.png
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\icon.png
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\build\icon.icns
+  • path doesn't exist  path=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\icon.icns
+  • no icons found, using provided fallback sources  
+  • exited          command=app-builder.exe code=0 pid=13208 out={"icons":null,"isFallback":true}
+  • default Electron icon is used  reason=application icon is not set
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe rcedit --args ["C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\dist-electron\\win-unpacked\\SQL Canvas.exe","--set-version-string","FileDescription","SQL Canvas","--set-version-string","ProductName","SQL Canvas","--set-version-string","LegalCopyright","Copyright © 2026 SQL Canvas","--set-file-version","1.0.0","--set-p cb8fda98fa6e15743592621d43160c68362b9d754aad284af5a136f5ff5cb5cb (sha256 hash) (sha256 hash) Canvas","--set-version-string","OriginalFilename",""]
+  • computing effective URL  initialUrl=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+                             currentUrl=https://release-assets.githubusercontent.com/github-production-release-asset/65527128/f73f2200-5d53-11ea-8264-ddd345f11ee4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-13T16%3A52%3A06Z&rscd=attachment%3B+filename%3DwinCodeSign-2.6.0.7z&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-13T15%3A52%3A04Z&ske=2026-03-13T16%3A52%3A06Z&sks=b&skv=2018-11-09&sig=%2FQMK7mDDNYSEXX7LDJ9POT9eJk7nYGhgVFh7uSQYRvU%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MzQxODg5MywibmJmIjoxNzczNDE4NTkzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Sq0W__aX-wI0wPQpO87rVWf_DOEdybDpv6wmCnjn4Nw&response-content-disposition=attachment%3B%20filename%3DwinCodeSign-2.6.0.7z&response-content-type=application%2Foctet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z length=5635384 contentType=application/octet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • map async       taskCount=1
+  • download part   range=bytes=0-5635383 index=0
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=709ms
+  • execute command  command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519'
+                     workingDirectory=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519.7z
+    --
+    Path = C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\262374519'
+                    workingDir=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  • exited          command=app-builder.exe code=2 pid=16648
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe rcedit --args ["C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\dist-electron\\win-unpacked\\SQL Canvas.exe","--set-version-string","FileDescription","SQL Canvas","--set-version-string","ProductName","SQL Canvas","--set-version-string","LegalCopyright","Copyright © 2026 SQL Canvas","--set-file-version","1.0.0","--set-p cb8fda98fa6e15743592621d43160c68362b9d754aad284af5a136f5ff5cb5cb (sha256 hash) (sha256 hash) Canvas","--set-version-string","OriginalFilename",""]
+  • computing effective URL  initialUrl=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+                             currentUrl=https://release-assets.githubusercontent.com/github-production-release-asset/65527128/f73f2200-5d53-11ea-8264-ddd345f11ee4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-13T17%3A12%3A48Z&rscd=attachment%3B+filename%3DwinCodeSign-2.6.0.7z&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-13T16%3A12%3A17Z&ske=2026-03-13T17%3A12%3A48Z&sks=b&skv=2018-11-09&sig=g%2FpY5fDnvGS4nbhtdnAync9dQPRpKXFhPTOtj1ZPCT4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MzQxOTAzNSwibmJmIjoxNzczNDE4NzM1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9-4GoAnrrNRq2YTedAc0nYA5IIcaugjOxwdMsCF56mk&response-content-disposition=attachment%3B%20filename%3DwinCodeSign-2.6.0.7z&response-content-type=application%2Foctet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z length=5635384 contentType=application/octet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • map async       taskCount=1
+  • download part   range=bytes=0-5635383 index=0
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=662ms
+  • execute command  command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291'
+                     workingDirectory=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291.7z
+    --
+    Path = C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\866361291'
+                    workingDir=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  • exited          command=app-builder.exe code=2 pid=1896
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe rcedit --args ["C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\dist-electron\\win-unpacked\\SQL Canvas.exe","--set-version-string","FileDescription","SQL Canvas","--set-version-string","ProductName","SQL Canvas","--set-version-string","LegalCopyright","Copyright © 2026 SQL Canvas","--set-file-version","1.0.0","--set-p cb8fda98fa6e15743592621d43160c68362b9d754aad284af5a136f5ff5cb5cb (sha256 hash) (sha256 hash) Canvas","--set-version-string","OriginalFilename",""]
+  • computing effective URL  initialUrl=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+                             currentUrl=https://release-assets.githubusercontent.com/github-production-release-asset/65527128/f73f2200-5d53-11ea-8264-ddd345f11ee4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-13T17%3A12%3A48Z&rscd=attachment%3B+filename%3DwinCodeSign-2.6.0.7z&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-13T16%3A12%3A17Z&ske=2026-03-13T17%3A12%3A48Z&sks=b&skv=2018-11-09&sig=g%2FpY5fDnvGS4nbhtdnAync9dQPRpKXFhPTOtj1ZPCT4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MzQxOTAzNSwibmJmIjoxNzczNDE4NzM1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9-4GoAnrrNRq2YTedAc0nYA5IIcaugjOxwdMsCF56mk&response-content-disposition=attachment%3B%20filename%3DwinCodeSign-2.6.0.7z&response-content-type=application%2Foctet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z length=5635384 contentType=application/octet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • map async       taskCount=1
+  • download part   range=bytes=0-5635383 index=0
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=594ms
+  • execute command  command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111'
+                     workingDirectory=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111.7z
+    --
+    Path = C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\419913111'
+                    workingDir=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  • exited          command=app-builder.exe code=2 pid=16168
+  • spawning        command=C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\app-builder-bin\win\x64\app-builder.exe rcedit --args ["C:\\Users\\myroglaptop\\Desktop\\coding-ws\\experimental-ws\\SQL Canvas\\dist-electron\\win-unpacked\\SQL Canvas.exe","--set-version-string","FileDescription","SQL Canvas","--set-version-string","ProductName","SQL Canvas","--set-version-string","LegalCopyright","Copyright © 2026 SQL Canvas","--set-file-version","1.0.0","--set-p cb8fda98fa6e15743592621d43160c68362b9d754aad284af5a136f5ff5cb5cb (sha256 hash) (sha256 hash) Canvas","--set-version-string","OriginalFilename",""]
+  • computing effective URL  initialUrl=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z
+                             currentUrl=https://release-assets.githubusercontent.com/github-production-release-asset/65527128/f73f2200-5d53-11ea-8264-ddd345f11ee4?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-03-13T17%3A12%3A48Z&rscd=attachment%3B+filename%3DwinCodeSign-2.6.0.7z&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-03-13T16%3A12%3A17Z&ske=2026-03-13T17%3A12%3A48Z&sks=b&skv=2018-11-09&sig=g%2FpY5fDnvGS4nbhtdnAync9dQPRpKXFhPTOtj1ZPCT4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MzQxOTAzNSwibmJmIjoxNzczNDE4NzM1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.9-4GoAnrrNRq2YTedAc0nYA5IIcaugjOxwdMsCF56mk&response-content-disposition=attachment%3B%20filename%3DwinCodeSign-2.6.0.7z&response-content-type=application%2Foctet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z length=5635384 contentType=application/octet-stream
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z size=5.6 MB parts=1
+  • map async       taskCount=1
+  • download part   range=bytes=0-5635383 index=0
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/winCodeSign-2.6.0/winCodeSign-2.6.0.7z duration=674ms
+  • execute command  command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535'
+                     workingDirectory=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  ⨯ cannot execute  cause=exit status 2
+                    out=
+    7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+    
+    Scanning the drive for archives:
+    1 file, 5635384 bytes (5504 KiB)
+    
+    Extracting archive: C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535.7z
+    --
+    Path = C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535.7z
+    Type = 7z
+    Physical Size = 5635384
+    Headers Size = 1492
+    Method = LZMA2:24m LZMA:20 BCJ2
+    Solid = +
+    Blocks = 2
+    
+    
+    Sub items Errors: 2
+    
+    Archives with Errors: 1
+    
+    Sub items Errors: 2
+    
+                    errorOut=ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535\darwin\10.12\lib\libcrypto.dylib
+    ERROR: Cannot create symbolic link : A required privilege is not held by the client. : C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535\darwin\10.12\lib\libssl.dylib
+    
+                    command='C:\Users\myroglaptop\Desktop\coding-ws\experimental-ws\SQL Canvas\node_modules\7zip-bin\win\x64\7za.exe' x -snld -bd 'C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535.7z' '-oC:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign\892405535'
+                    workingDir=C:\Users\myroglaptop\AppData\Local\electron-builder\Cache\winCodeSign
+  • exited          command=app-builder.exe code=2 pid=29864

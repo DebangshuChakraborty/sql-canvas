@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #0d101b;
+  --bg-color-light: #111422;
+  --bg-color-lighter: #364591;
+  --text-color: #b9bfdc;
+  --text-color-bright: #dadaea;
+  --accent-color: #2474f4;
+  --accent-hover: #00ff4c;
+  --border-color: #07080e;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
