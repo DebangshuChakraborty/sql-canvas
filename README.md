@@ -23,8 +23,8 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Clone the repository** (if not already done):
    ```bash
-   git clone <your-repository-url>
-   cd "SQL Canvas"
+   git clone https://github.com/DebangshuChakraborty/sql-canvas.git
+   cd sql-canvas
    ```
 
 2. **Start the Oracle Database**
